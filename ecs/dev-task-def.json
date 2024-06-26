@@ -27,7 +27,7 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
-                    "awslogs-group": "/ecs/PetSearch",
+                    "awslogs-group": "dev-SVC_CODE-ecs-webapp-loggrp",
                     "awslogs-region": "ap-northeast-1",
                     "awslogs-stream-prefix": "logs"
                 },
@@ -71,7 +71,7 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
-                    "awslogs-group": "/ecs/PetSearch",
+                    "awslogs-group": "dev-SVC_CODE-ecs-webapp-loggrp",
                     "awslogs-region": "ap-northeast-1",
                     "awslogs-stream-prefix": "logs"
                 },
