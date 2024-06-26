@@ -37,7 +37,7 @@
             "credentialSpecs": []
         },
         {
-            "name": "container",
+            "name": "dev-SVC_CODE-ecs-webapp-svc-container",
             "image": "fill at deploy time",
             "cpu": 256,
             "memory": 512,
@@ -81,7 +81,7 @@
             "credentialSpecs": []
         }
     ],
-    "family": "dev-onefishjp-ecs-webapp",
+    "family": "dev-SVC_CODE-ecs-webapp",
     "taskRoleArn": "arn:aws:iam::TARGET_AWS_ACCOUNT_ID:role/terraform-20240626041507801400000004",
     "executionRoleArn": "arn:aws:iam::TARGET_AWS_ACCOUNT_ID:role/terraform-20240626041507800700000003",
     "networkMode": "awsvpc",
