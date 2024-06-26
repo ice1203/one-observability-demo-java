@@ -30,7 +30,7 @@ import java.util.stream.Collectors;
 @RestController
 public class SearchController {
     public static final String BUCKET_NAME = "/petstore/s3bucketname";
-    public static final String DYNAMODB_TABLENAME = "/petstore/dynamodbtablename";
+    public static final String DYNAMODB_TABLENAME = "dev-onefishjp-webapp";
     private final RandomNumberGenerator randomGenerator;
 
     private Logger logger = LoggerFactory.getLogger(SearchController.class);
