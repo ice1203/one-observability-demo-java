@@ -47,11 +47,11 @@ jobs:
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
 
-      ## タスク定義.jsonのアカウントID部分を置換
-      #- name: Rewrite task-definition account id
-      #  run: sed -i -e s/TARGET_AWS_ACCOUNT_ID/${{ secrets.AWS_ACCOUNT_ID }}/g ./ecs/dev-task-def.json
-      #
-      ## GitのコミットID（ハッシュ）をタスク定義.jsonに反映
+      # タスク定義.jsonのアカウントID部分を置換
+      - name: Rewrite task-definition account id
+        run: sed -i -e s/TARGET_AWS_ACCOUNT_ID/${{ secrets.AWS_ACCOUNT_ID }}/g ./ecs/dev-task-def.json
+      
+      # GitのコミットID（ハッシュ）をタスク定義.jsonに反映
       #- name: Rewrite task-definition git commit hash
       #  run: sed -i -e s/TARGET_COMMIT_HASH/${{ github.sha }}/g ./ecs/dev-task-def.json
 #
