@@ -82,8 +82,8 @@
         }
     ],
     "family": "dev-SVC_CODE-ecs-webapp",
-    "taskRoleArn": "arn:aws:iam::TARGET_AWS_ACCOUNT_ID:role/terraform-20240626041507801400000004",
-    "executionRoleArn": "arn:aws:iam::TARGET_AWS_ACCOUNT_ID:role/terraform-20240626041507800700000003",
+    "taskRoleArn": "arn:aws:iam::TARGET_AWS_ACCOUNT_ID:role/dev-SVC_CODE-ecs-task-role",
+    "executionRoleArn": "arn:aws:iam::TARGET_AWS_ACCOUNT_ID:role/dev-SVC_CODE-ecs-taskexec-role",
     "networkMode": "awsvpc",
     "revision": 2,
     "volumes": [],
