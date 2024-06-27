@@ -6,7 +6,7 @@ COPY ./DiceApplication.java ./DiceApplication.java
 COPY ./RollController.java ./RollController.java
 
 ENV GRADLE_OPTS "-Dorg.gradle.daemon=false"
-RUN gradle build -DexcludeTags='integration'
+RUN gradle build
 
 FROM amazoncorretto:17-alpine
 WORKDIR /app
