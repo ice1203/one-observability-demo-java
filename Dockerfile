@@ -10,6 +10,7 @@ RUN gradle assemble
 FROM amazoncorretto:17-alpine
 WORKDIR /app
 
+VOLUME [ "/app" ]
 ADD https://github.com/aws-observability/aws-otel-java-instrumentation/releases/download/v1.32.2/aws-opentelemetry-agent.jar /app/aws-opentelemetry-agent.jar
 ENV JAVA_TOOL_OPTIONS "-javaagent:/app/aws-opentelemetry-agent.jar"
 
