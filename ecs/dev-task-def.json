@@ -6,6 +6,7 @@
             "cpu": 256,
             "memory": 256,
             "links": [],
+            "readonlyRootFilesystem": true,
             "portMappings": [],
             "essential": true,
             "entryPoint": [],
@@ -42,6 +43,7 @@
             "cpu": 256,
             "memory": 512,
             "links": [],
+            "readonlyRootFilesystem": true,
             "portMappings": [
                 {
                     "containerPort": 8080,
