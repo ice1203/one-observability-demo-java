@@ -25,6 +25,15 @@
             "dockerSecurityOptions": [],
             "dockerLabels": {},
             "ulimits": [],
+            "healthCheck": {
+                "command": [
+                    "/healthcheck"
+                  ],
+                "interval": 5,
+                "timeout": 6,
+                "retries": 5,
+                "startPeriod": 1
+            },
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
