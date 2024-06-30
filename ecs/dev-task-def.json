@@ -12,7 +12,7 @@
             "entryPoint": [],
             "command": [
                 "--config",
-                "/etc/ecs/ecs-xray.yaml"
+                "/etc/ecs/container-insights/otel-task-metrics-config.yaml"
             ],
             "environment": [],
             "environmentFiles": [],
